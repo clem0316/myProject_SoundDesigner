@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sound Designer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&family=Orbitron:wght@500&family=Playfair:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/4669df2049.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="blocVideo">
+      <div class="videoAndButtons">
+        <div class="video-container">
+          <video id="survivorsVideo" muted=""></video>
+        </div>
+        <div class="progressBar" style="color: white">Essai</div>
+
+        <div class="button-container">
+          <button id="btnPlay">
+            <i class="fa-solid fa-play fa-xl" style="color: #ffffff"></i>
+          </button>
+          <button id="btnPause">
+            <i class="fa-solid fa-pause fa-xl" style="color: #f8f9fc"></i>
+          </button>
+          <button id="btnStop">
+            <i
+              class="fa-regular fa-circle-stop fa-xl"
+              style="color: #f6f9fd"
+            ></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="audio-container">
+        <div class="tracks-container">
+          <div class="audiomixerTitle">AUDIO MIXER</div>
+          <div class="tracks-container-titles">
+            <div class="stemTitle">Stem</div>
+            <div class="waveTitle">Waveform</div>
+            <div class="buttonsTitle">Mute | Unmute - Solo</div>
+          </div>
+          
+          <div class="stemDirects track">
+            <div class="track-name" style="color: rgb(244, 12, 171, 1)">
+              Voix directes
+            </div>
+            <div class="waveformDirects waveform">
+              <audio id="survivorsDirects"></audio>
+            </div>
+            <div class="audioButtons">
+              <button class="directsMute btnMute">
+                <i class="fa-solid fa-volume-high fa-lg"></i>
+              </button>
+              <div class="muteText mTextDirects">active</div>
+              <button class="solo soloDirects">solo</button>
+            </div>
+          </div>
+          <div class="stemPs track">
+            <div class="track-name" style="color: rgb(195, 28, 228, 1)">
+              Post-Synchros
+            </div>
+            <div class="waveformPs waveform">
+              <audio id="survivorsPs"></audio>
+            </div>
+            <div class="audioButtons">
+              <button class="psMute btnMute">
+                <i class="fa-solid fa-volume-high fa-lg"></i>
+              </button>
+              <div class="muteText mTextPs">active</div>
+              <button class="solo soloPs">solo</button>
+            </div>
+          </div>
+          <div class="stemAmb track">
+            <div class="track-name" style="color: rgb(79, 246, 255, 1)">
+              Ambiances
+            </div>
+            <div class="waveformAmb waveform">
+              <audio id="survivorsAmb"></audio>
+            </div>
+            <div class="audioButtons">
+              <button class="ambMute btnMute">
+                <i class="fa-solid fa-volume-high fa-lg"></i>
+              </button>
+              <div class="muteText mTextAmb">active</div>
+              <button class="solo soloAmb">solo</button>
+            </div>
+          </div>
+          <div class="stemFx track">
+            <div class="track-name" style="color: rgb(70, 245, 21, 1)">
+              Effets
+            </div>
+            <div class="waveformFx waveform">
+              <audio id="survivorsFx"></audio>
+            </div>
+            <div class="audioButtons">
+              <button class="fxMute btnMute">
+                <i class="fa-solid fa-volume-high fa-lg"></i>
+              </button>
+              <div class="muteText mTextFx">active</div>
+              <button class="solo soloFx">solo</button>
+            </div>
+          </div>
+          <div class="stemFoley track">
+            <div class="track-name" style="color: rgb(236, 145, 18, 1)">
+              Bruitage
+            </div>
+            <div class="waveformFoley waveform">
+              <audio id="survivorsBr"></audio>
+            </div>
+            <div class="audioButtons">
+              <button class="foleyMute btnMute">
+                <i class="fa-solid fa-volume-high fa-lg"></i>
+              </button>
+              <div class="muteText mTextFoley">active</div>
+              <button class="solo soloFoley">solo</button>
+            </div>
+          </div>
+          <div class="stemMusic track">
+            <div class="track-name" style="color: rgba(221, 244, 12, 1)">
+              Musique
+            </div>
+            <div class="waveformMusic waveform">
+              <audio id="survivorsMusic"></audio>
+            </div>
+            <div class="audioButtons">
+              <button class="musicMute btnMute">
+                <i class="fa-solid fa-volume-high fa-lg"></i>
+              </button>
+              <div class="muteText mTextMusic">active</div>
+              <button class="solo soloMusic">solo</button>
+            </div>
+          </div>
+          <!-- <div class="stemAll track">
+            <div class="track-name">Tout</div>
+            <div class="waveformAll">
+              <audio id="survivorsAll"></audio>
+            </div>
+            <div class="audioButtons">
+              <span class="btnMute">
+                <i class="fa-solid fa-volume fa-xl" style="color: #eceff4"></i>
+              </span>
+            </div>
+          </div> -->
+          <!-- <div class="stemTemoin track">
+              <audio
+                id="survivorsTemoin"
+                controls
+                src="./assets/montSon/Survivants BOB 1/AudioFiles/Sortie Montage Image.wav"
+              ></audio>
+            </div> -->
+        </div>
+        <div class="audio-container-right">
+          <div class="selectAll"></div>
+          <div class="volumeFader"></div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

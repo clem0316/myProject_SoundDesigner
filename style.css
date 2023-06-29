@@ -1,0 +1,250 @@
+:root {
+  --colorPink: rgb(255, 188, 192);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Orbitron", sans-serif;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  /* overflow: hidden; */
+}
+
+.blocVideo {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 56% 44%;
+  justify-content: center;
+}
+
+.videoAndButtons {
+  /* overflow: hidden; */
+  position: relative;
+  max-width: 1000px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 auto;
+}
+
+.video-container {
+  height: 95%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* transform: translateY(-100px); */
+}
+
+.video-container video {
+  height: 100%;
+  z-index: -2;
+}
+
+.progressBar {
+  transform: translateY(-3rem);
+}
+
+.button-container {
+  display: flex;
+  height: 5%;
+  position: relative;
+  align-items: center;
+  z-index: 10;
+}
+
+.button-container button {
+  display: flex;
+  position: absolute;
+  width: 2%;
+  background: transparent;
+  border: none;
+  transform: translateY(-2rem);
+  transition: 0.2s;
+}
+
+.button-container button:hover {
+  cursor: pointer;
+  transform: translateY(-2rem) scale(1.35);
+}
+
+.button-container button:active {
+  transform: translateY(-2rem) scale(0.9);
+}
+
+#btnPlay {
+  right: 7%;
+}
+
+#btnPause {
+  right: 4%;
+}
+
+#btnStop {
+  right: 1%;
+}
+
+.audio-container {
+  min-width: 1000px;
+  height: 93%;
+  color: white;
+  display: grid;
+  grid-template-columns: 93% 7%;
+  align-items: center;
+  padding: 0 20px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  border: 1px solid rgba(55, 131, 172, 0.298);
+  box-shadow: 0.3em 0.4em 0.8em rgba(35, 26, 10, 0.806);
+}
+
+.tracks-container {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 8px 10px;
+}
+
+.audiomixerTitle {
+  font-size: 0.7rem;
+  color: rgba(177, 164, 129, 0.889);
+  text-align: center;
+  margin: 0px 0 4px 5px;
+  padding: 2px;
+  /* border: 1px solid rgba(203, 130, 20, 0.216);
+  box-shadow: 0.25em 0.25em 0.9em rgba(101, 57, 29, 0.338); */
+}
+
+.tracks-container-titles {
+  width: 100%;
+  background: transparent;
+  display: grid;
+  grid-template-columns: 12% 70% 18%;
+  color: rgba(55, 131, 172, 0.7);
+  height: 20px;
+  font-size: 0.65rem;
+  align-content: space-between;
+  margin-bottom: 5px;
+}
+
+.stemTitle {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 0 5px;
+  letter-spacing: 1px;
+}
+
+.waveTitle {
+  padding: 0 20px;
+}
+
+.buttonsTitle {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  font-size: 0.6rem;
+}
+
+.track-name {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 0 5px;
+  letter-spacing: 1.5px;
+  font-size: 0.7rem;
+}
+
+.track {
+  height: 45px;
+  width: 100%;
+  background: black;
+  display: grid;
+  grid-template-columns: 12% 70% 18%;
+}
+
+#survivorsAll {
+  height: 20px;
+  color: rgb(70, 245, 21);
+}
+
+.audioButtons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 22px;
+  width: 100%;
+}
+
+.btnMute {
+  font-size: 0.7rem;
+  opacity: 0.5;
+  color: rgb(111, 147, 111);
+  background: transparent;
+  border: none;
+}
+
+.btnMute i {
+  transition: 0.2s;
+}
+
+.btnMute i:hover {
+  cursor: pointer;
+  transform: scale(1.4);
+  color: rgb(227, 67, 67);
+}
+
+.btnMute i:active {
+  transform: scale(0.85);
+}
+
+.muteText {
+  font-size: 0.6rem;
+  opacity: 0.8;
+  letter-spacing: 1.5px;
+  color: rgb(167, 211, 167);
+}
+
+.waveform {
+  width: 100%;
+  margin: 0 20px;
+  /* height: 95%;
+  box-shadow: 0em 0.2em 0.9em rgba(101, 57, 29, 0.13); */
+}
+
+.solo {
+  font-size: 0.55rem;
+  border: 1px solid rgb(203, 130, 20);
+  transition: 0.2s;
+  background: rgb(236, 236, 214);
+  font-weight: bold;
+  padding: 1px;
+  box-shadow: 0.25em 0.25em 0.9em rgb(101, 56, 29);
+}
+
+.solo:hover {
+  cursor: pointer;
+  transform: scale(1.25);
+  background-color: rgb(140, 67, 67);
+  border: 1px solid rgb(140, 67, 67);
+}
+
+.solo:active {
+  transform: scale(0.9);
+}
+
+.audio-container-right {
+  height: 80%;
+  border: 1px solid rgba(55, 131, 172, 0.298);
+  display: grid;
+  grid-template-rows: 20% 80%;
+}
