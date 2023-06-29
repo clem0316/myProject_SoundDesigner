@@ -216,7 +216,7 @@ body {
 
 .waveform {
   width: 100%;
-  margin: 0 20px;
+  padding: 0 7px 0 20px;
   /* height: 95%;
   box-shadow: 0em 0.2em 0.9em rgba(101, 57, 29, 0.13); */
 }
