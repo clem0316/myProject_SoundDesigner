@@ -9,7 +9,7 @@ import WaveSurfer from "https://unpkg.com/wavesurfer.js@beta";
 
 const survivorsVideo = document.getElementById("survivorsVideo");
 survivorsVideo.src =
-  "https://res.cloudinary.com/dzq7b6tce/video/upload/v1688080209/Projet_SoundDesigner/Les_Survivants_BOB_1_upwbqx.mp4";
+  "https://res.cloudinary.com/dzq7b6tce/video/upload/v1688080209/Projet_SoundDesigner/Survivants_BOB1/Les_Survivants_BOB_1_upwbqx.mp4";
 // "./assets/montSon/Survivants BOB 1/Les_Survivants_BOB_1.mp4";
 
 // survivors All
@@ -20,8 +20,7 @@ survivorsVideo.src =
 //   cursorColor: "red",
 //   height: "auto",
 // barHeight: 3,
-//   url: "https://res.cloudinary.com/dzq7b6tce/video/upload/v1688080466/Projet_SoundDesigner/Stem_All_olixgj.wav"
-// "./assets/montSon/Survivants BOB 1/AudioFiles/Stem All.wav",
+//   url: "https://res.cloudinary.com/dzq7b6tce/video/upload/v1688080466/Projet_SoundDesigner/Survivants_BOB1/Stem_All_olixgj.wav",
 // });
 
 //survivors Directs
@@ -33,7 +32,7 @@ const waveSurvivorsDirects = WaveSurfer.create({
   height: "auto",
   barHeight: 1.2,
   barWidth: 1.5,
-  url: "https://res.cloudinary.com/dzq7b6tce/video/upload/v1688080462/Projet_SoundDesigner/Stem_Directs_koi2qp.wav",
+  url: "https://res.cloudinary.com/dzq7b6tce/video/upload/v1688080462/Projet_SoundDesigner/Survivants_BOB1/Stem_Directs_koi2qp.wav",
   // "./assets/montSon/Survivants BOB 1/AudioFiles/Stem Directs.wav",
 });
 
@@ -46,7 +45,7 @@ const waveSurvivorsPs = WaveSurfer.create({
   height: "auto",
   barHeight: 1.6,
   barWidth: 1.5,
-  url: "https://res.cloudinary.com/dzq7b6tce/video/upload/v1688080466/Projet_SoundDesigner/Stem_Post-Synchros_c8rt4t.wav",
+  url: "https://res.cloudinary.com/dzq7b6tce/video/upload/v1688080466/Projet_SoundDesigner/Survivants_BOB1/Stem_Post-Synchros_c8rt4t.wav",
   // "./assets/montSon/Survivants BOB 1/AudioFiles/Stem Post-Synchros.wav",
 });
 
@@ -59,7 +58,7 @@ const waveSurvivorsAmb = WaveSurfer.create({
   height: "auto",
   barHeight: 5,
   barWidth: 1.5,
-  url: "https://res.cloudinary.com/dzq7b6tce/video/upload/v1688080463/Projet_SoundDesigner/Stem_Ambiances_kbimov.wav",
+  url: "https://res.cloudinary.com/dzq7b6tce/video/upload/v1688080463/Projet_SoundDesigner/Survivants_BOB1/Stem_Ambiances_kbimov.wav",
   // "./assets/montSon/Survivants BOB 1/AudioFiles/Stem Ambiances.wav",
 });
 
@@ -72,7 +71,7 @@ const waveSurvivorsFx = WaveSurfer.create({
   height: "auto",
   barHeight: 1.7,
   barWidth: 1.5,
-  url: "https://res.cloudinary.com/dzq7b6tce/video/upload/v1688080464/Projet_SoundDesigner/Stem_Effets_tlygaa.wav",
+  url: "https://res.cloudinary.com/dzq7b6tce/video/upload/v1688080464/Projet_SoundDesigner/Survivants_BOB1/Stem_Effets_tlygaa.wav",
   // "./assets/montSon/Survivants BOB 1/AudioFiles/Stem Effets.wav",
 });
 
@@ -85,7 +84,7 @@ const waveSurvivorsFoley = WaveSurfer.create({
   height: "auto",
   barHeight: 1.7,
   barWidth: 1.5,
-  url: "https://res.cloudinary.com/dzq7b6tce/video/upload/v1688080467/Projet_SoundDesigner/Stem_Bruitages_aea2sm.wav",
+  url: "https://res.cloudinary.com/dzq7b6tce/video/upload/v1688080467/Projet_SoundDesigner/Survivants_BOB1/Stem_Bruitages_aea2sm.wav",
   // "/assets/montSon/Survivants BOB 1/AudioFiles/Stem Bruitages.wav",
 });
 
@@ -98,7 +97,7 @@ const waveSurvivorsMusic = WaveSurfer.create({
   height: "auto",
   barHeight: 3,
   barWidth: 1.5,
-  url: "https://res.cloudinary.com/dzq7b6tce/video/upload/v1688080464/Projet_SoundDesigner/Stem_Musique_bdfapt.wav",
+  url: "https://res.cloudinary.com/dzq7b6tce/video/upload/v1688080464/Projet_SoundDesigner/Survivants_BOB1/Stem_Musique_bdfapt.wav",
   // "./assets/montSon/Survivants BOB 1/AudioFiles/Stem Musique.wav",
 });
 
