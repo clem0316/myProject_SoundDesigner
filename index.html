@@ -55,7 +55,7 @@
             <div class="waveTitle">Waveform</div>
             <div class="buttonsTitle">Mute | Unmute - Solo</div>
           </div>
-          
+
           <div class="stemDirects track">
             <div class="track-name" style="color: rgb(244, 12, 171, 1)">
               Voix directes
@@ -166,8 +166,48 @@
             </div> -->
         </div>
         <div class="audio-container-right">
-          <div class="selectAll"></div>
-          <div class="volumeFader"></div>
+          <div class="fader-box">
+            <div class="options"></div>
+            <div class="display-box">
+              <div class="slider-screen">
+                <div class="slider-scren-value">15</div>
+              </div>
+              <div class="slider">
+                <div class="volbox">
+                  <input
+                    id="volume"
+                    type="range"
+                    min="0"
+                    max="1"
+                    value="1"
+                    step="0.01"
+                  />
+                </div>
+
+                <div class="vca">
+                  <div class="vca-meter"></div>
+                  <div class="vca-markers">
+                    <span>15</span>
+                    <span>14</span>
+                    <span>13</span>
+                    <span>12</span>
+                    <span>11</span>
+                    <span>10</span>
+                    <span>9</span>
+                    <span>8</span>
+                    <span>7</span>
+                    <span>6</span>
+                    <span>5</span>
+                    <span>4</span>
+                    <span>3</span>
+                    <span>2</span>
+                    <span>1</span>
+                    <span>0</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

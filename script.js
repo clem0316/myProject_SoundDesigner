@@ -631,3 +631,38 @@ soloMusic.addEventListener("click", () => {
   clickedSoloFx = 1;
   clickedSoloFoley = 1;
 });
+
+//
+
+// ---------- BLOC FADER ----------
+
+//
+
+// Volume fader
+var volumeInput = document.querySelector("#volume");
+var onChangeVolume = function (e) {
+  waveSurvivorsDirects.setVolume(e.target.value);
+  waveSurvivorsPs.setVolume(e.target.value);
+  waveSurvivorsAmb.setVolume(e.target.value);
+  waveSurvivorsFx.setVolume(e.target.value);
+  waveSurvivorsFoley.setVolume(e.target.value);
+  waveSurvivorsMusic.setVolume(e.target.value);
+};
+volumeInput.addEventListener("input", onChangeVolume);
+volumeInput.addEventListener("change", onChangeVolume);
+
+// Display volume
+const volumeLevel = document.getElementById("volume");
+const volumeDisplay = document.querySelector(".slider-scren-value");
+volumeLevel.oninput = function () {
+  volumeDisplay.innerHTML = Math.round(volume.value * 150) / 10;
+};
+//Note : le Math.round pour arrondir au dixième : je dois multiplier par 10 dans la parenthèse, puis diviser par 10 en dehors. Ici 150 et non 10 car je souhaitais que ma valeur max affiche 15 et non 1. Donc 15 (pour ma valeur) * 10 (du math.round) = 150
+
+// volumeDisplay.innerHTML = volumeLevel;
+
+//
+
+// ---------- SOLO ----------
+
+//
